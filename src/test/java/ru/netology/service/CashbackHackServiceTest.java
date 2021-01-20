@@ -9,9 +9,9 @@ public class CashbackHackServiceTest {
     @Test
     public void testRemainReturn1000IfAmount1000() {
         CashbackHackService cashbackHackService = new CashbackHackService();
-        int expected = 1000;
+        int expected = 0;
         int actual = cashbackHackService.remain(1000);
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
 
     }
 
